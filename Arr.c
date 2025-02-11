@@ -193,7 +193,7 @@ char BinarySearch(char *arr, char val, int size) // for char
     return -1;
 }
 
-void ChooseType(int *int_arr, float *float_arr, char *char_arr, int size)
+void ChooseType(int **int_arr, float **float_arr, char **char_arr, int size)
 {
     char ch = '0';
 
@@ -205,18 +205,18 @@ void ChooseType(int *int_arr, float *float_arr, char *char_arr, int size)
         switch (ch)
         {
         case 'i':
-            int_arr = RandFillIntArr(size);
-            RecursFind(int_arr, 24, size);
+            *int_arr = RandFillIntArr(size);
+            RecursFind(*int_arr, 24, size);
             break;
 
         case 'f':
-            float_arr = RandFillFloatArr(size);
-            RecursFind(float_arr, 0.003, size);
+            *float_arr = RandFillFloatArr(size);
+            RecursFind(*float_arr, 0.003, size);
             break;
 
         case 'c':
-            char_arr = RandFillCharArr(size);
-            RecursFind(char_arr, '$', size);
+            *char_arr = RandFillCharArr(size);
+            RecursFind(*char_arr, '$', size);
             break;
 
         case 'q':
@@ -232,11 +232,11 @@ void ChooseType(int *int_arr, float *float_arr, char *char_arr, int size)
 
 int main()
 {
-    int *int_arr;
-    float *float_arr;
-    char *char_arr;
+    int *int_arr = NULL;
+    float *float_arr = NULL;
+    char *char_arr = NULL;
 
-    ChooseType(int_arr, float_arr, char_arr, 10);
+    ChooseType(&int_arr, &float_arr, &char_arr, 10);
 
     free(int_arr);
     free(float_arr);
