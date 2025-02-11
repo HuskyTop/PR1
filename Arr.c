@@ -237,5 +237,9 @@ int main()
     char *char_arr;
 
     ChooseType(int_arr, float_arr, char_arr, 10);
+
+    free(int_arr);
+    free(float_arr);
+    free(char_arr);
     return 0;
 }
