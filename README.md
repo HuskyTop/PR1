@@ -210,7 +210,7 @@ int main()
 ### При запуску вилізає меню із запропонованим списком типів даних.<br>При виборі, створюється випадковий масив із цього типу даних, а потім шукається наперед задане у коді значення. При успіху - пише, що значення знайдене, а при невдачі - не знайдене.
 ### Проглянемо всі можливі види варіанти роботи з програмою
 ### Exit and input error
-![image](https://github.com/user-attachments/assets/0fe551d1-a2d9-4be8-8b6e-918bd483e23d)
+![image](https://github.com/user-attachments/assets/0fe551d1-a2d9-4be8-8b6e-918bd483e23d)<br>
 ![image](https://github.com/user-attachments/assets/990a8ade-8974-4c28-b98d-bbe5f03f2cd9)
 ### Integer:
 ![image](https://github.com/user-attachments/assets/a1972c70-daab-4635-b8cc-666c4d08c8b8)
